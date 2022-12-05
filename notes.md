@@ -75,6 +75,6 @@ Technologies that we will use.
 - List items in cart items
 - Redirect to cart screen after add to cart
 
-**Update Quanity In The Cart**
+**Update Quantity In The Cart**
 
 **Save Cart Items**
