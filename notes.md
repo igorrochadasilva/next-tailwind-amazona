@@ -77,4 +77,38 @@ Technologies that we will use.
 
 **Update Quantity In The Cart**
 
+- Add select box for quantity
+- Handle select box change
+
 **Save Cart Items**
+
+- install js-cookie package
+- save and retreive cart items in cookies
+
+## User Authentication
+
+**Create Login Form**
+
+- install react hook fom
+- create input boxes
+- add login button
+
+**Connect to MongoDB**
+
+- Install mongoose
+- Install mongodb or use mongodb atlas
+- Save connection url in .env file
+- Create sample users
+
+**Create Login API**
+
+- install next-auth
+- create nextauth.js
+- implement signin
+- use signin in login form
+
+**Add User Menu**
+
+- Check user authentication
+- Install headlessui
+- Show user menu

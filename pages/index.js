@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import ProductItem from "../components/Itens";
 import Layout from "../components/Layout";
 import data from "../utils/data";

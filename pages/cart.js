@@ -5,8 +5,9 @@ import { Store } from "../utils/Store";
 import Image from "next/image";
 import { XCircleIcon } from "@heroicons/react/24/outline";
 import { useRouter } from "next/router";
+import dynamic from "next/dynamic";
 
-export default function CartScreen() {
+function CartScreen() {
   const router = useRouter();
   const { state, dispatch } = useContext(Store);
 
@@ -18,6 +19,12 @@ export default function CartScreen() {
   const removeItemHandle = (item) => {
     dispatch({ type: "CART_REMOVE_ITEM", payload: item });
   };
+
+  const updateCartHandler = (item, qty) => {
+    const quantity = Number(qty);
+    dispatch({ type: "CART_ADD_ITEM", payload: { ...item, quantity } });
+  };
+
   return (
     <Layout title="Shopping Cart">
       <h1 className="mb-4 text-xl">Shopping Cart</h1>
@@ -54,6 +61,20 @@ export default function CartScreen() {
                         </a>
                       </Link>
                     </td>
+                    <td className="p-5 text-right">
+                      <select
+                        value={item.quantity}
+                        onChange={(e) =>
+                          updateCartHandler(item, e.target.value)
+                        }
+                      >
+                        {[...Array(item.countInStock).keys()].map((x) => (
+                          <option key={x + 1} value={x + 1}>
+                            {x + 1}
+                          </option>
+                        ))}
+                      </select>
+                    </td>
                     <td className="p-5 text-right">{item.quantity}</td>
                     <td className="p-5 text-right">{item.price}</td>
                     <td className="p-5 text-center">
@@ -76,7 +97,7 @@ export default function CartScreen() {
               </li>
               <li>
                 <button
-                  onClick={() => router.push("/shipping")}
+                  onClick={() => router.push("login?redirect=/shipping")}
                   className="primary-button w-full"
                 >
                   Check out
@@ -89,3 +110,5 @@ export default function CartScreen() {
     </Layout>
   );
 }
+
+export default dynamic(() => Promise.resolve(CartScreen), { ssr: false });
