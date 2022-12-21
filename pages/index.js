@@ -7,7 +7,6 @@ export default function Home() {
   const [storeData, setStoreData] = useState(data);
   const [storeProducts, setStoreProducts] = useState(data.products);
 
-  // console.log("🚀 ~ file: index.tsx ~ line 13 ~ Home ~ storeData", storeData);
   return (
     <div>
       <Layout title="Home Page">

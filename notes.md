@@ -112,3 +112,15 @@ Technologies that we will use.
 - Check user authentication
 - Install headlessui
 - Show user menu
+
+# Checkout Wizard
+
+**Create Shipping Screen**
+
+- Display address fields
+- Save address in context
+
+**Create payment Methodd Screen**
+
+- Display payment methods
+- Save payment method in context

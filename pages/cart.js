@@ -14,7 +14,6 @@ function CartScreen() {
   const {
     cart: { cartItems },
   } = state;
-  console.log("🚀 ~ file: cart.js:13 ~ CartScreen ~ cartItems", cartItems);
 
   const removeItemHandle = (item) => {
     dispatch({ type: "CART_REMOVE_ITEM", payload: item });
