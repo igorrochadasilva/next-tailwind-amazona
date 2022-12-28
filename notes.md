@@ -124,3 +124,17 @@ Technologies that we will use.
 
 - Display payment methods
 - Save payment method in context
+
+# Load Products From MongoDB
+
+**Seed Sample Products**
+
+- Insert sample products to mongoDB
+- Load products from db in home and product screen
+- Check product count in stock in add to cart
+
+**Load Products MongoDB**
+
+- Load products in home page from mongodb
+- Load products in product page from mongodb
+- Use product api to check count in stock in add to cart
