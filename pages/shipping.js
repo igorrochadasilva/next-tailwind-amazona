@@ -121,12 +121,12 @@ export default function ShippingScreen() {
             className="w-full"
             id="country"
             autoFocus
-            {...register("Country", {
+            {...register("country", {
               required: "Please enter postal Code",
             })}
           ></input>
-          {errors.Country && (
-            <div className="text-red-500">{errors.Country.message}</div>
+          {errors.country && (
+            <div className="text-red-500">{errors.country.message}</div>
           )}
         </div>
         <div className="mb-4 flex justify-between">

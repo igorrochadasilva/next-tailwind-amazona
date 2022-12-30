@@ -5,7 +5,6 @@ import { useRouter } from "next/router";
 import { Store } from "../utils/Store";
 import { toast } from "react-toastify";
 import Cookies from "js-cookie";
-
 export default function PaymentScreen() {
   const [selectedPaymentMethod, setSelectedPaymentMethod] = useState("");
 
@@ -17,13 +16,10 @@ export default function PaymentScreen() {
 
   const submitHandler = (e) => {
     e.preventDefault();
-
     if (!selectedPaymentMethod) {
       return toast.error("Payment method is required");
     }
-
-    dispatch({ type: "SAVE_PAYMENT_METHOD", payment: selectedPaymentMethod });
-
+    dispatch({ type: "SAVE_PAYMENT_METHOD", payload: selectedPaymentMethod });
     Cookies.set(
       "cart",
       JSON.stringify({
@@ -34,7 +30,6 @@ export default function PaymentScreen() {
 
     router.push("/placeorder");
   };
-
   useEffect(() => {
     if (!shippingAddress.address) {
       return router.push("/shipping");
@@ -77,3 +72,5 @@ export default function PaymentScreen() {
     </Layout>
   );
 }
+
+PaymentScreen.auth = true;

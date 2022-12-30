@@ -138,3 +138,10 @@ Technologies that we will use.
 - Load products in home page from mongodb
 - Load products in product page from mongodb
 - Use product api to check count in stock in add to cart
+
+**Create place order screen**
+
+- display shipping address
+- display payment method
+- display order items
+- implement create order
