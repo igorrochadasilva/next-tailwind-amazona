@@ -145,3 +145,22 @@ Technologies that we will use.
 - display payment method
 - display order items
 - implement create order
+
+**Create order screen**
+
+- Implement backend api for order details
+- Load order data from backend
+- Display order details
+
+**Create Register Screen**
+ 
+- add signup api
+- create register page
+- call api on form submit
+
+**Pay Order By PayPal**
+
+- add paypal button
+- handle payment
+- create backend api
+- update order state
