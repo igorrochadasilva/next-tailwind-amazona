@@ -153,7 +153,7 @@ Technologies that we will use.
 - Display order details
 
 **Create Register Screen**
- 
+
 - add signup api
 - create register page
 - call api on form submit
@@ -164,3 +164,9 @@ Technologies that we will use.
 - handle payment
 - create backend api
 - update order state
+
+**Create Order History Screen**
+
+- Create my order api
+- Create order history component
+- Fetch orders and display them

@@ -63,7 +63,7 @@ function OrderScreen() {
           type: "resetOptions",
           value: {
             "client-id": clientId,
-            currency: "USD",
+            currency: "BRL",
           },
         });
         paypalDispatch({ type: "setLoadingStatus", value: "pending" });
