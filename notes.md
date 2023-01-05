@@ -170,3 +170,10 @@ Technologies that we will use.
 - Create my order api
 - Create order history component
 - Fetch orders and display them
+
+**Publish on Vercel**
+
+- Create vercel account
+- Connect to github
+- Set next auth and mongodb db in env vars
+- Push code to github
