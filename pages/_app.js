@@ -31,6 +31,7 @@ function Auth({ children }) {
       router.push("/unauthorized?message=login required");
     },
   });
+  console.log("🚀 ~ file: _app.js:36 ~ Auth ~ status", status);
   if (status === "loading") {
     return <div>Loading...</div>;
   }
