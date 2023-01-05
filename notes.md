@@ -177,3 +177,9 @@ Technologies that we will use.
 - Connect to github
 - Set next auth and mongodb db in env vars
 - Push code to github
+
+**Update User Profile**
+
+- Create profile screen
+- Show user info
+- Handle update user info
