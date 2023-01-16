@@ -183,3 +183,53 @@ Technologies that we will use.
 - Create profile screen
 - Show user info
 - Handle update user info
+
+**Create Admin Dashboard**
+
+- Create Admin Menu
+- Create dashboard screen
+- Implement admin summary api
+
+**List Orders For Admin**
+
+- create orders page
+- create orders api
+- use api in page
+
+**Deliver Order For Admin**
+
+- create deliver api
+- add deliver button
+- implement click handler
+
+  **List Products For Admin**
+
+- create products page
+- create products api
+- use api in page
+
+**Create Product Edit Page**
+
+- create edit page
+- create api for product
+- show product data in form
+
+**Upload Product Image**
+
+- create cloudinary account
+- get cloudinary keys
+- create upload api
+- upload files in edit page
+
+**Create And Delete Products**
+
+- add create product button
+- build new product api
+- add handler for delete
+- implement delete api
+
+**List Users For Admin**
+
+- create users page
+- create users api
+- use api in page
