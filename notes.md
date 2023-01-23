@@ -233,3 +233,9 @@ Technologies that we will use.
 - create users page
 - create users api
 - use api in page
+
+**Add Carousel**
+
+- create featured products
+- feed carousel data
+- show popular products
